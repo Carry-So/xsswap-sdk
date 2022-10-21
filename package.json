@@ -1,18 +1,19 @@
 {
-  "name": "quickswap-sdk",
+  "name": "xsswap-sdk",
   "license": "MIT",
-  "version": "3.0.8",
-  "description": "🛠 An SDK for building applications on top of Quickswap.",
+  "version": "1.0.0",
+  "description": "An SDK for building applications on top of XSswap.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/sameepsi/quickswap-sdk.git",
+  "repository": "https://github.com/Carry-So/xsswap-sdk.git",
   "keywords": [
-    "quickswap",
-    "matic",
-    "ethereum"
+    "xsswap",
+    "xdc",
+    "xinfin",
+    "apothem"
   ],
   "module": "dist/sdk.esm.js",
   "scripts": {
