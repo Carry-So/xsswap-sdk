@@ -10,9 +10,12 @@ import { ChainId } from './constants'
 import { Token } from './entities/token'
 
 let TOKEN_DECIMALS_CACHE: { [chainId: number]: { [address: string]: number } } = {
-  [ChainId.MUMBAI]: {
-    '0xE0B7927c4aF23765Cb51314A0E0521A9645F0E2A': 9 // DGD
-  }
+  [ChainId.XINFIN]: {
+    '0x951857744785e80e2de051c32ee7b25f9c458c42': 18, // WXDC
+  },
+  [ChainId.APOTHEM]: {
+    '0x2a5c77b016Df1b3b0AE4E79a68F8adF64Ee741ba': 18, // WXDC
+  },
 }
 
 /**
@@ -47,8 +50,8 @@ export abstract class Fetcher {
               ...TOKEN_DECIMALS_CACHE,
               [chainId]: {
                 ...TOKEN_DECIMALS_CACHE?.[chainId],
-                [address]: decimals
-              }
+                [address]: decimals,
+              },
             }
             return decimals
           })
