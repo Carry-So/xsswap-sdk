@@ -11,7 +11,7 @@ import { Token } from './entities/token'
 
 let TOKEN_DECIMALS_CACHE: { [chainId: number]: { [address: string]: number } } = {
   [ChainId.XINFIN]: {
-    '0x951857744785e80e2de051c32ee7b25f9c458c42': 18, // WXDC
+    '0x951857744785E80e2De051c32EE7b25f9c458C42': 18, // WXDC
   },
   [ChainId.APOTHEM]: {
     '0x2a5c77b016Df1b3b0AE4E79a68F8adF64Ee741ba': 18, // WXDC
